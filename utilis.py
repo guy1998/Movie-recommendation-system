@@ -85,4 +85,14 @@ def give_recommendation():
 
 
 def get_trending():
-    pass
+    result = set()
+    for i in range(1, 5):
+        if i != user_id:
+            with open('Database/liked_' + str(i) + '.txt', 'r') as file:
+                for line in file:
+                    similar_movies = find_list_of_similar_movies(line[:-1])
+                    if len(result) == 0:
+                        result = set(similar_movies)
+                    else:
+                        result.intersection_update(set(similar_movies))
+    return result

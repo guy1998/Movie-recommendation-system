@@ -4,7 +4,7 @@ from utilis import search_movie
 from utilis import add_liked_movie
 from utilis import logout
 from utilis import give_recommendation
-
+from utilis import get_trending
 
 def main_page():
     def on_search():
@@ -47,6 +47,18 @@ def main_page():
         else:
             list1.insert(tk.END, "We don't know much about you. Try trending!")
 
+    def finding_trending():
+        clear_list()
+        list1.insert(tk.END, "Loading...")
+        trending = get_trending()
+        clear_list()
+        if len(trending) > 0:
+            list1.insert(tk.END, "Here is your recommendation:")
+            for element in trending:
+                list1.insert(tk.END, element)
+        else:
+            list1.insert(tk.END, "We don't know much about you. Try trending!")
+
     window = tk.Tk()
     window.title("Main page")
     window.geometry('650x440')
@@ -84,7 +96,7 @@ def main_page():
     recommend_button = tk.Button(window, text="Recommend", width=20, command=recommend)
     recommend_button.place(x=10, y=400)
 
-    trending_button = tk.Button(window, text="Trending", width=20)
+    trending_button = tk.Button(window, text="Trending", width=20, command=finding_trending)
     trending_button.place(x=170, y=400)
 
     clear_button = tk.Button(window, text="Clear result", command=clear_list, width=20)
