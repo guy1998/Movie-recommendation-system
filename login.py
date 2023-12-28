@@ -1,5 +1,6 @@
 import tkinter
 from utilis import authenticate
+from home_page import main_page
 
 
 def login_page():
@@ -44,10 +45,3 @@ def login_page():
 
     window.mainloop()
 
-
-def main_page():
-    window = tkinter.Tk()
-    window.title("Main page")
-    window.geometry('640x440')
-    window.configure(bg='#333333')
-    window.mainloop()

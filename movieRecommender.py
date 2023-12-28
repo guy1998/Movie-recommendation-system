@@ -110,7 +110,7 @@ sb1.configure(command=list1.yview)
 
 # Read the data from the file
 # Step 1: Read CSV File
-df = pd.read_csv("movie_dataset.csv")
+df = pd.read_csv("Database/movie_dataset.csv")
 # print df.columns
 
 # Step 2: Select Features

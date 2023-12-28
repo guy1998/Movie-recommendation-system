@@ -1,6 +1,4 @@
-import numpy as np
 import pandas as pd
-import difflib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -37,7 +35,7 @@ def construct_similarity_matrix(movies_data):
 
 
 def find_list_of_similar_movies(title):
-    df = pd.read_csv('movie_dataset.csv')
+    df = pd.read_csv('Database/movie_dataset.csv')
     similarity_matrix = construct_similarity_matrix(df)
     index = get_index_from_title(df, title)
     similarity_score = list(enumerate(similarity_matrix[index]))
