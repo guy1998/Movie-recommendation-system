@@ -1,5 +1,6 @@
 import pandas as pd
 from data_mining_model import find_list_of_similar_movies
+import time
 
 user_id = 0
 liked_movies = []
@@ -96,3 +97,10 @@ def get_trending():
                     else:
                         result.intersection_update(set(similar_movies))
     return result
+
+
+def timout(seconds):
+    start = time.time()
+    end = time.time()
+    while end - start < seconds:
+        end = time.time()

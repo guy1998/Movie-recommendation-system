@@ -1,10 +1,11 @@
 import tkinter as tk
-
 from utilis import search_movie
 from utilis import add_liked_movie
 from utilis import logout
 from utilis import give_recommendation
 from utilis import get_trending
+from utilis import timout
+
 
 def main_page():
     def on_search():
@@ -50,6 +51,7 @@ def main_page():
     def finding_trending():
         clear_list()
         list1.insert(tk.END, "Loading...")
+        timout(2)
         trending = get_trending()
         clear_list()
         if len(trending) > 0:
@@ -66,28 +68,28 @@ def main_page():
 
     frame = tk.Frame(bg='#333333')
 
-    welcome_label = tk.Label(frame, text="Welcome to Notflix", font=("Arial", 20), bg='#333333', fg="#FF3399")
-    welcome_label.grid(row=0, column=0, padx=(10, 0))
+    welcome_label = tk.Label(frame, text="Welcome to Notflix", font=("Arial", 20), bg='#333333', fg="red")
+    welcome_label.grid(row=0, column=0, columnspan=4, padx=(10, 100))
 
-    logout_button = tk.Button(frame, text="Logout", command=lambda: logout(lambda: window.destroy()))
-    logout_button.grid(row=0, column=3, padx=(0, 10))
+    img = tk.PhotoImage(file="Images/logout.png")
+    width, height = 20, 20
+    resized_img = img.subsample(int(img.width() / width), int(img.height() / height))
+    logout_button = tk.Button(frame, text="Logout", command=lambda: logout(lambda: window.destroy()),
+                              image=resized_img, bg="#333333", bd='0', relief='flat')
+    logout_button.grid(row=0, column=4, padx=(0, 10))
 
-    # Search label, entry, and button
-    search_label = tk.Label(frame, text="Search", bg='#333333', fg="#FF3399", width=30)
-    search_label.grid(row=1, column=0, pady=30)
+    search_entry = tk.Entry(frame, font=("Arial", 16), width=35)
+    search_entry.grid(row=1, column=0, columnspan=3, pady=30, padx=(20, 10))
 
-    search_entry = tk.Entry(frame, font=("Arial", 16))
-    search_entry.grid(row=1, column=1, pady=30, padx=(0, 10))
-
-    search_button = tk.Button(frame, text="Search", command=on_search)
-    search_button.grid(row=1, column=2, pady=30)
+    search_button = tk.Button(frame, text="Search", command=on_search, width=15)
+    search_button.grid(row=1, column=4, pady=30)
 
     list1 = tk.Listbox(frame, height=16, width=95)
     list1.grid(row=20, column=0, rowspan=50, columnspan=60)
 
     # Attach scrollbar to the list - easily explore the list
     sb1 = tk.Scrollbar(frame)
-    sb1.grid(row=20, column=3, rowspan=60, columnspan=60)
+    sb1.grid(row=20, column=5, rowspan=60, columnspan=60)
 
     # Configure that scroll bar to our list box
     list1.configure(yscrollcommand=sb1.set)

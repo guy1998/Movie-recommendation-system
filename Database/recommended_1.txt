@@ -1,66 +1,70 @@
-8
-Gravity
-X-Men
-Spy Hard
-Shrek the Third
-Snow White: A Tale of Terror
-The Three Stooges
-Enchanted
-Scooby-Doo
-The Nut Job
-Alien³
-Spy Kids
-Inside Out
-Star Trek Into Darkness
-Star Trek Beyond
-X-Men: The Last Stand
-The Smurfs 2
-Jason X
-Scooby-Doo 2: Monsters Unleashed
-Maleficent
-Certifiably Jonathan
-Snow White and the Huntsman
-Piranha 3D
-Alien
-Cradle Will Rock
-Thunder and the House of Magic
-The Thief and the Cobbler
-Paul Blart: Mall Cop
-Predator
-Aladdin
-The Golden Child
-Hoodwinked Too! Hood VS. Evil
-Guardians of the Galaxy
-Cargo
-Just Married
-The Princess and the Frog
-Eulogy
-Moonraker
-A Cinderella Story
-Tangled
-Trekkies
-Mary Poppins
-The Smurfs
-Hot Pursuit
-Last Action Hero
-Happy Feet Two
-Red Riding Hood
-Shrek Forever After
-Event Horizon
-Frozen
-Galaxy Quest
-The Chronicles of Narnia: The Voyage of the Dawn Treader
-Aliens
-Krull
-Avatar
-Planet of the Apes
-A Simple Wish
-The Incredible Hulk
-Treasure Planet
+9
 The Image Revolution
-Conan the Destroyer
-Spy Kids 3-D: Game Over
-Shrek
+Spy Hard
+Spy Kids
+Scooby-Doo 2: Monsters Unleashed
 Shrek 2
-Tropic Thunder
+Cargo
+Tangled
+Maleficent
+Aliens
+Racing Stripes
+Street Fighter
+Just Married
+A Simple Wish
+A Cinderella Story
+Treasure Planet
+Guardians of the Galaxy
+Paul Blart: Mall Cop
+Krull
+Planet of the Apes
+Hot Pursuit
+The Incredible Hulk
+Avatar
+Conan the Destroyer
+Gravity
+Hoodwinked Too! Hood VS. Evil
+Shrek the Third
+Predator
+Alvin and the Chipmunks: The Squeakquel
+Star Trek Beyond
+Aladdin
+Red Riding Hood
+Mary Poppins
+Cradle Will Rock
+Piranha 3D
+The Princess and the Frog
+Enchanted
+The Golden Child
+The Smurfs
+Alien
+The Thief and the Cobbler
+Alien³
+Shrek Forever After
+Inside Out
+X-Men
+Trekkies
+Certifiably Jonathan
+The Chronicles of Narnia: The Voyage of the Dawn Treader
+Thunder and the House of Magic
+Galaxy Quest
+Snow White: A Tale of Terror
+Snow White and the Huntsman
 The Brass Teapot
+Spy Kids 3-D: Game Over
+Last Action Hero
+X-Men: The Last Stand
+Frozen
+Star Trek Into Darkness
+Moonraker
+Shrek
+Tropic Thunder
+Pan
+The Smurfs 2
+The Three Stooges
+Jason X
+The Nut Job
+Eulogy
+Happy Feet Two
+Event Horizon
+Scooby-Doo
